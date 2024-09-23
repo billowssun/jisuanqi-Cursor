@@ -27,6 +27,9 @@ body {
     text-align: right;
     padding: 10px;
     border-radius: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .buttons {
