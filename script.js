@@ -78,3 +78,18 @@ function updateDisplay() {
     const display = document.getElementById('display');
     display.innerText = displayValue;
 }
+
+function toggleSign() {
+    displayValue = displayValue.charAt(0) === '-' ? displayValue.slice(1) : '-' + displayValue;
+    updateDisplay();
+}
+
+function inputPercent() {
+    displayValue = String(parseFloat(displayValue) / 100);
+    updateDisplay();
+}
+
+function deleteLast() {
+    displayValue = displayValue.length > 1 ? displayValue.slice(0, -1) : '0';
+    updateDisplay();
+}
