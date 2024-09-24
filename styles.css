@@ -17,6 +17,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 600px; /* 增加高度 */
 }
 
 .display {
@@ -59,4 +60,16 @@ body {
 
 .operator:hover {
     background-color: #e08e00;
+}
+
+#operator-display {
+    font-size: 1.5em;
+    color: gray;
+    text-align: right;
+    padding: 10px;
+}
+
+.result {
+    font-size: 0.5em;
+    opacity: 0.5;
 }
